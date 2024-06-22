@@ -2,6 +2,14 @@
 
 I wanted to use [cljfmt](https://github.com/weavejester/cljfmt) along with [helix editor](https://helix-editor.com/) which uses stdin/stdout for formatting so I made this wrapper.
 
+
+### Compile into platform binary
+
+```
+clj -T:build binary
+```
+
+
 ### Local configuration
 
 ~/.clojure/deps.edn

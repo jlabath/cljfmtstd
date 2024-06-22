@@ -1,5 +1,6 @@
 (ns jlabath.cljfmtstd
-  (:require [cljfmt.core :as cfmt]))
+  (:require [cljfmt.core :as cfmt])
+  (:gen-class))
 
 (def options (assoc cfmt/default-options
                     :remove-multiple-non-indenting-spaces? true
@@ -9,7 +10,7 @@
 (defn -main
   [& _]
   (let [source (slurp *in*)]
-    (print (cfmt/reformat-string source options))))
+    (println (cfmt/reformat-string source options))))
 
 
 
