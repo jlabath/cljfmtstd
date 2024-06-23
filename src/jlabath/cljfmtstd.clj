@@ -10,7 +10,8 @@
 (defn -main
   [& _]
   (let [source (slurp *in*)]
-    (println (cfmt/reformat-string source options))))
+    (print (cfmt/reformat-string source options))
+    (flush)))
 
 
 
